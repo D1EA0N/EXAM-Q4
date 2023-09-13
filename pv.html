@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>怪獣８号インフォ</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+<meta name="viewport" content="width =device-width, intial-scale=1">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="img/Site-logo.png" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="volumes.html">VOLUMES</a></li>  
+                    <li><a href="characters.html">CHARACTERS</a></li>   
+                    <li><a href="pv.html">PV</a></li>    
+                    <li><a href="others.html">OTHERS</a></li>            
+                </ul>
+            </div>
+    </nav>
+    <h1>Promotional Videos</h1>
+</section>
+
+<!----------pv--------->
+    <section class="pv">
+        <h1>Featured Videos</h1>
+        <p>This section is where you can watch the promotional videos of Kaiju No. 8.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="pv-row">
+            <div class="pv-col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u4KXMphMstk" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; 
+                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="pv-layer">
+                    <h3>
+                        PV #1
+                    </h3>
+                </div>
+            </div>
+            <div class="pv-col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BDzA7DdgTYk" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; 
+                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="pv-layer">
+                    <h3>
+                        PV #2
+                    </h3>
+                </div>
+            </div>
+            <div class="pv-col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/k_5AtfKI614" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; 
+                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="pv-layer">
+                    <h3>
+                        PV #3
+                    </h3>
+                </div>
+            </div>
+            <div class="pv-col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jGTuoqN2xmQ" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; 
+                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="pv-layer">
+                    <h3>
+                        PV #4
+                    </h3>
+                </div>
+            </div>
+            <div class="pv-col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sr7s1jH253w" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; 
+                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="pv-layer">
+                    <h3>
+                        PV #5
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!---Menu Button-->
+<div id="menuBtn">
+    <img src="img/menu.png" id="menu">
+</div>
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var navLinks = document.getElementById("navLinks")
+    var menu = document.getElementById("menu")
+
+    navLinks.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if(navLinks.style.right == "-250px"){
+            navLinks.style.right = "0";
+            menu.src = "img/close.png";
+        }
+        else{
+            navLinks.style.right = "-250px";
+            menu.src = "img/menu.png"
+        }
+    }
+</script>
+
+<section class="footer">
+    <h4>All Rights Reserve by © Shounen Jump</h4>
+    <div class="icons">     
+        <div id="shonen">
+            <a href="https://shonenjumpplus.com/" target="_blank"><img src="img/jump plus.png"></a>
+            <a href="https://www.viz.com/shonenjump" target="_blank"><img src="img/shonen jump.png" style="margin-bottom: 29px;"></a>          
+        </div>
+        <div class="download">
+            <a href="https://play.google.com/store/apps/details?id=com.viz.wsj.android" target="_blank"><img src="img/playstore.png"></a>
+            <a href="https://apps.apple.com/ph/app/shonen-jump-manga-comics/id594237344" target="_blank"><img src="img/app store.png" style="width: 145px; margin-bottom: 11px;"></a> 
+        </div>
+        <div class="links">
+            <a href="https://facebook.com" target="_blank"><img src="img/facebook.png"></a>
+            <a href="https://instagram.com" target="_blank"><img src="img/instagram.png"></a>
+            <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+        </div> 
+    </div>
+    <p>Story & Art by Naoya Matsumoto</p>
+</section>
+
+</body>
+</html>

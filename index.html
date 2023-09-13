@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>怪獣８号インフォ</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+<meta name="viewport" content="width =device-width, intial-scale=1">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="img/Site-logo.png" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="volumes.html">VOLUMES</a></li>  
+                    <li><a href="characters.html">CHARACTERS</a></li>   
+                    <li><a href="pv.html">PV</a></li>    
+                    <li><a href="others.html">OTHERS</a></li>            
+                </ul>
+            </div>
+    </nav>
+    <div class="banner-text">
+        <h1>怪獣８号</h1>
+            <p>Kaiju No. 8 Wiki</p>
+                <div class="banner-btn">
+                    <a href="https://nyaa.si/view/1707130" target="_blank"><span></span>Download Manga</a>
+                    <a href="https://manga4life.com/manga/Monster-8" target="_blank"><span></span>Read Manga</a>
+                </div>                
+    </div>
+</section>
+
+<!---Menu Button-->
+<div id="menuBtn">
+    <img src="img/menu.png" id="menu">
+</div>
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var navLinks = document.getElementById("navLinks")
+    var menu = document.getElementById("menu")
+
+    navLinks.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if(navLinks.style.right == "-250px"){
+            navLinks.style.right = "0";
+            menu.src = "img/close.png";
+
+        }
+        else{
+            navLinks.style.right = "-250px";
+            menu.src = "img/menu.png"
+        }
+    }
+</script>
+
+<!--------------------synopsis-------------------->
+<section class="synopsis">
+    <h1>Synopsis</h1>
+    <hr>
+    <p>Grotesque, Godzilla-like monsters called "kaiju" have been appearing around Japan for many years. 
+        To combat these beasts, an elite military unit known as the Defense Corps risks their lives daily to 
+        protect civilians. Once a creature is killed, "sweepers"—working under the Professional Kaijuu Cleaner 
+        Corporation—are left to dispose of its remains.</p>
+    <p>Kafka Hibino, a 32-year-old man, is unsatisfied with his job as a sweeper. 
+        From a young age, he has aspired to join the Defense Corps and kill kaiju for a living. 
+        After a few failed attempts, however, he gave up on his dreams and resigned himself to 
+        the mediocrity that provided a decent paycheck. Nevertheless, when an ambitious, 
+        18-year-old recruit named Leno Ichikawa joins his cleaning team, Kafka is once again 
+        reminded of his desire to join the military.</p>
+    <p>Following a chain of unfortunate events and an interaction with the junior sweeper, 
+        Kafka encounters a parasite-type kaiju that forces its way in through his mouth—turning 
+        him into a humanoid monster. With his newfound powers, Kafka aims to give his lifelong 
+        dream a final try.</p>  
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="footer">
+    <h4>All Rights Reserve by © Shounen Jump</h4>
+    <div class="icons">     
+        <div id="shonen">
+            <a href="https://shonenjumpplus.com/" target="_blank"><img src="img/jump plus.png"></a>
+            <a href="https://www.viz.com/shonenjump" target="_blank"><img src="img/shonen jump.png" style="margin-bottom: 29px;"></a>          
+        </div>
+        <div class="download">
+            <a href="https://play.google.com/store/apps/details?id=com.viz.wsj.android" target="_blank"><img src="img/playstore.png"></a>
+            <a href="https://apps.apple.com/ph/app/shonen-jump-manga-comics/id594237344" target="_blank"><img src="img/app store.png" style="width: 145px; margin-bottom: 11px;"></a> 
+        </div>
+        <div class="links">
+            <a href="https://facebook.com" target="_blank"><img src="img/facebook.png"></a>
+            <a href="https://instagram.com" target="_blank"><img src="img/instagram.png"></a>
+            <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+        </div> 
+    </div>
+    <p>Story & Art by Naoya Matsumoto</p>
+</section>
+
+</body>
+</html>

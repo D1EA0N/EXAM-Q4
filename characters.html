@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>怪獣８号インフォ</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+<meta name="viewport" content="width =device-width, intial-scale=1">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="img/Site-logo.png" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="volumes.html">VOLUMES</a></li>  
+                    <li><a href="characters.html">CHARACTERS</a></li>   
+                    <li><a href="pv.html">PV</a></li>    
+                    <li><a href="others.html">OTHERS</a></li>            
+                </ul>
+            </div>
+    </nav>
+    <h1>Main Characters</h1>
+</section>
+
+<!--------------------characters-------------------->
+<section class="characters">
+    <h1>Character's Description</h1>
+    <p>This category lists the main characters in the series.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="char-row">
+        <div class="char-col">           
+                <img src="img/Kafka Hibino.jpg">
+            <div class="char-layer1">
+                <h3>
+                    Kafka Hibino (日比野カフカ)/Kaiju No. 8 (怪獣8)
+                </h3>
+                <p>The main protagonist of the Kaiju No. 8 manga series.
+                    He is a Defense Force member and a former worker for the Professional Kaiju Cleaning Company Monster 
+                    Sweeper Inc. After a kaiju managed to enter his body, he obtained the ability to turn himself into a humanoid kaiju. 
+                    He was formerly a member of the Third Division, but was recently transferred to the First Division.</p>
+            </div>
+        </div>
+        <div class="char-col">
+                <img src="img/Leno Ichikawa.jpg">
+            <div class="char-layer1">
+                <h3>
+                    Leno Ichikawa (市川レノ)
+                </h3>
+                <p>He worked at Monster Sweeper Inc. where he met and befriended Kafka Hibino. After learning the latter's secret, 
+                   Leno helped Kafka enter the Defense Force with him. He is currently a member of the Third Division. 
+                   After the destruction of Tachikawa Base, he was transferred to the Fourth Division.</p>
+            </div>
+        </div>
+        <div class="char-col">
+                <img src="img/Kikoru Shinomiya.png">
+            <div class="char-layer1">
+                <h3>
+                    Kikoru Shinomiya (四ノ宮キコル)
+                </h3>
+                <p>She is the young daughter of Defense Force Director General Isao Shinomiya and a member of the Third Division.
+                   After Tachikawa Base was destroyed, Kikoru was transferred to the First Division.</p>
+            </div>
+        </div>
+        <div class="char-col">
+                <img src="img/Mina Ashiro.jpg">
+            <div class="char-layer1">
+                <h3>
+                    Mina Ashiro (亜白ミナ)
+                </h3>
+                <p>The Captain of the Third Division of the Defense Force and Kafka Hibino's childhood friend.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---Menu Button-->
+<div id="menuBtn">
+    <img src="img/menu.png" id="menu">
+</div>
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var navLinks = document.getElementById("navLinks")
+    var menu = document.getElementById("menu")
+
+    navLinks.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if(navLinks.style.right == "-250px"){
+            navLinks.style.right = "0";
+            menu.src = "img/close.png";
+        }
+        else{
+            navLinks.style.right = "-250px";
+            menu.src = "img/menu.png"
+        }
+    }
+</script>
+
+<section class="footer">
+    <h4>All Rights Reserve by © Shounen Jump</h4>
+    <div class="icons">     
+        <div id="shonen">
+            <a href="https://shonenjumpplus.com/" target="_blank"><img src="img/jump plus.png"></a>
+            <a href="https://www.viz.com/shonenjump" target="_blank"><img src="img/shonen jump.png" style="margin-bottom: 29px;"></a>          
+        </div>
+        <div class="download">
+            <a href="https://play.google.com/store/apps/details?id=com.viz.wsj.android" target="_blank"><img src="img/playstore.png"></a>
+            <a href="https://apps.apple.com/ph/app/shonen-jump-manga-comics/id594237344" target="_blank"><img src="img/app store.png" style="width: 145px; margin-bottom: 11px;"></a> 
+        </div>
+        <div class="links">
+            <a href="https://facebook.com" target="_blank"><img src="img/facebook.png"></a>
+            <a href="https://instagram.com" target="_blank"><img src="img/instagram.png"></a>
+            <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+        </div> 
+    </div>
+    <p>Story & Art by Naoya Matsumoto</p>
+</section>
+
+</body>
+</html>
